@@ -6,23 +6,34 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Persona lanzamiento;
+            Persona datoPersona;
 
-            lanzamiento = new Persona();
+            datoPersona = new Persona("Bob", "Kunga");
 
-            Console.WriteLine(lanzamiento.lanzar());
+            Console.WriteLine(datoPersona.Lanzar());
         }
     }
 
     class Persona
     {
-        public int lanzar()
+        String nombrePersona;
+
+        String apellidoPersona;
+
+        public int Lanzar()
         {
-            int randomInt;
+            int numeroAzar;
 
-            randomInt = new Random().Next(0, 3);
+            numeroAzar = new Random().Next(0, 3);
 
-            return randomInt;
+            return numeroAzar;
+        }
+
+        public Persona(string nombre, string apellido)
+        {
+            nombrePersona = nombre;
+
+            apellidoPersona = apellido;
         }
     }
 }
