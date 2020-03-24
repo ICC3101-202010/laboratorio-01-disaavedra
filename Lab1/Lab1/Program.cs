@@ -6,8 +6,18 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Daniel");
+            Persona lanzamiento;
+            lanzamiento = new Persona();
+            Console.WriteLine(lanzamiento.lanzar());
+        }
+    }
+    class Persona
+    {
+        public int lanzar()
+        {
+            int randomInt;
+            randomInt = new Random().Next(0, 3);
+            return randomInt;
         }
     }
 }
