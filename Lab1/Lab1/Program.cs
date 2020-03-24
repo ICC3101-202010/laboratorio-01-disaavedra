@@ -34,6 +34,8 @@ namespace Lab1
             nombrePersona = nombre;
 
             apellidoPersona = apellido;
+
+            Console.WriteLine(nombrePersona + " " + apellidoPersona);
         }
     }
 }
